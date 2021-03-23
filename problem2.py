@@ -1,10 +1,10 @@
 def fibonacci():
-    series = [1,2] 
+    series = [1, 2]
     count = 0
     while True:
-        series.append(series[count]+series[count+1])
+        series.append(series[count] + series[count + 1])
         count += 1
-        if max(series)>4000000:
+        if max(series) > 4000000:
             break
 
     even = []
@@ -15,6 +15,7 @@ def fibonacci():
             even.append(series[i])
     print(sum(even))
     # print(odd)
+
 
 if __name__ == '__main__':
     fibonacci()
